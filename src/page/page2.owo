@@ -1,0 +1,185 @@
+<template lang="pug">
+.page2
+  .so.so-page2-0
+    img.so.so-page2-1(src="@|1106.png|" style="display:none;")
+    img.so.so-page2-2(src="@|1107.png|" style="display:none;")
+    img.so.so-page2-3(src="@|1108.png|" style="display:none;")
+    img.so.so-page2-4(src="@|1109.png|" style="display:none;")
+    img.so.so-page2-5(src="@|1110.png|" style="display:none;")
+    img.so.so-page2-6(src="@|1111.png|" style="display:none;")
+    img.so.so-page2-7(src="@|1112.png|" style="display:none;")
+    img.so.so-page2-8(src="@|344.png|" style="display:none;")
+    img.so.so-page2-9(src="@|1113.png|" style="display:none;")
+    img.so.so-page2-10(src="@|1105.png|")
+    img.so.so-page2-11(src="@|1104.png|")
+    img.so.so-page2-12(src="@|1103.png|")
+    img.so.so-page2-13(src="@|1102.png|")
+    img.so.so-page2-14(src="@|1101.png|")
+    img.so.so-page2-15(src="@|1100.png|")
+    img.so.so-page2-16(src="@|1099.png|")
+    img.so.so-page2-17(src="@|1098.png|")
+    img.so.so-page2-18(src="@|1097.png|")
+    img.so.so-page2-19(src="@|1096.png|" o-animation="shrink")
+    img.so.so-page2-20(src="@|1095.png|" o-animation="shrink")
+    img.so.so-page2-21(src="@|1094.png|" o-animation="shrink")
+    img.so.so-page2-22(src="@|1090.png|" o-animation="shrink")
+    img.so.so-page2-23(src="@|1091.png|" o-animation="shrink")
+    img.so.so-page2-24(src="@|1092.png|" o-animation="shrink")
+    img.so.so-page2-25(src="@|1093.png|" o-animation="shrink")
+    img.so.so-page2-26(src="@|375.png|" o-animation="shrink" o-tap="showTiMu('.dati-2', '.so-page2-15')")
+    img.so.so-page2-27(src="@|1087.png|" o-animation="shrink" o-tap="showTiMu('.dati-1', '.so-page2-18')")
+  img.right(src="@|right.png|")
+  img.error(src="@|error.png|")
+  plug(_name="dati1" _src="./src/moudle/dati1.owo")
+  plug(_name="dati2" _src="./src/moudle/dati2.owo")
+</template>
+<script>
+module.exports = {
+  showTiMu: function (classStr, hideStr) {
+    this.query('.so-page2-0').style.display = 'none'
+    document.querySelector(classStr).style.display = 'block'
+    document.querySelector(hideStr).style.display = 'none'
+    this.$target.style.display = 'none'
+  }
+}
+</script>
+<style lang="less">
+.page2 {
+  background-image: url('@|1089.jpg|');
+}
+so-page2-0 {
+  left: 0px;
+  top: 0px;
+  width: 750px;
+  height: 1508px;
+  z-index: 0;;
+}
+.so-page2-1 {
+  left: 444px;
+  top: 702px;
+  z-index: -1;
+}
+.so-page2-2 {
+  left: 185px;
+  top: 823px;
+  z-index: -2;
+}
+.so-page2-3 {
+  left: 418px;
+  top: 911px;
+  z-index: -3;
+}
+.so-page2-4 {
+  left: 105px;
+  top: 969px;
+  z-index: -4;
+}
+.so-page2-5 {
+  left: 398px;
+  top: 1099px;
+  z-index: -5;
+}
+.so-page2-6 {
+  left: 242px;
+  top: 1085px;
+  z-index: -6;
+}
+.so-page2-7 {
+  left: 115px;
+  top: 746px;
+}
+.so-page2-8 {
+  left: 287px;
+  top: 994px;
+}
+.so-page2-9 {
+  left: 206px;
+  top: 915px;
+}
+.so-page2-10 {
+  left: 670px;
+  top: 655px;
+}
+.so-page2-11 {
+  left: 672px;
+  top: 427px;
+}
+.so-page2-12 {
+  left: 672px;
+  top: 199px;
+}
+.so-page2-13 {
+  left: 422px;
+  top: 654px;
+}
+.so-page2-14 {
+  left: 431px;
+  top: 427px;
+}
+.so-page2-15 {
+  left: 485px;
+  top: 199px;
+}
+.so-page2-16 {
+  left: 199px;
+  top: 654px;
+}
+.so-page2-17 {
+  left: 198px;
+  top: 427px;
+}
+.so-page2-18 {
+  left: 201px;
+  top: 199px;
+}
+.so-page2-19 {
+  left: 544px;
+  top: 653px;
+}
+.so-page2-20 {
+  left: 288px;
+  top: 664px;
+}
+.so-page2-21 {
+  left: 28px;
+  top: 683px;
+}
+.so-page2-22 {
+  left: 502px;
+  top: 453px;
+}
+.so-page2-23 {
+  left: 282px;
+  top: 382px;
+}
+.so-page2-24 {
+  left: 55px;
+  top: 444px;
+}
+.so-page2-25 {
+  left: 566px;
+  top: 180px;
+}
+.so-page2-26 {
+  left: 279px;
+  top: 221px;
+}
+.so-page2-27 {
+  left: 46px;
+  top: 195px;
+}
+.so-page2-28 {
+  left: 0px;
+  top: 0px;
+}
+.error, .right {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -173px;
+  bottom: 0;
+  margin: auto;
+  z-index: 999;
+  display: none;
+}
+</style>

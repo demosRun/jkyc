@@ -1,0 +1,62 @@
+<template lang="pug">
+.dati-2.dati
+  img.so.so-5(src="@|476.png|")
+  .so.so-0
+    img.so.so-1(src="@|511.png|")
+    img.so.so-2(src="@|1120.png|" o-animation="shrink" o-tap="showBox()")
+    img.so.so-3(src="@|1121.png|" o-animation="shrink" o-tap="showBox('.so-page2-8')")
+    img.so.so-4(src="@|503.png|")
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+    },
+    showBox: function (text) {
+      if (text) {
+        document.querySelector('.right').style.display = 'block'
+        document.querySelector(text).style.display = 'block'
+      } else {
+        document.querySelector('.error').style.display = 'block'
+      }
+      setTimeout(() => {
+        document.querySelector('.right').style.display = 'none'
+        document.querySelector('.error').style.display = 'none'
+        this.$el.style.display = 'none'
+        document.querySelector('.so-page2-0').style.display = 'block'
+      }, 1000);
+    }
+  }
+</script>
+
+
+<style lang="less">
+.so-0 {
+  left: 124px;
+  top: 267px;
+  width: 496px;
+  height: 565px;
+  z-index: 0;;
+}
+.so-1 {
+  left: 97px;
+  top: 0px;
+  z-index: -1;
+}
+.so-2 {
+  left: 237px;
+  top: 450px;
+  z-index: -2;
+}
+.so-3 {
+  left: 0px;
+  top: 450px;
+  z-index: -3;
+}
+.so-4 {
+  left: 15px;
+  top: 303px;
+  z-index: -4;
+}
+
+</style>
