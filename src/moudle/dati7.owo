@@ -13,6 +13,9 @@
     created: function () {
     },
     showBox: function (text) {
+      this.query('.so-2').style.display = 'none'
+      this.query('.so-3').style.display = 'none'
+      this.query('.so-4').style.display = 'none'
       if (text) {
         document.querySelector('.right').style.display = 'block'
         document.querySelector(text).style.display = 'block'
@@ -28,12 +31,7 @@
         if (owo.script.page2.data.jishu >= 9) {
           document.querySelector('p').innerText = `成功挑选${owo.script.page2.data.duide}盘菜到你餐桌， 你与世界的距离只差一个进博会！`
           document.querySelector('.play-box').style.display = 'block'
-          setTimeout(() => {
-            document.querySelector('.play-box .name').style.opacity = 0
-            setTimeout(() => {
-              document.querySelector('.play-box .showInfo').style.opacity = 1
-            }, 500);
-          }, 1000);
+          document.querySelector('.play-box').style.opacity = 1
         }
       }, 1000);
     }

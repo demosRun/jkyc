@@ -306,7 +306,7 @@ li {
 
 .dati-4 .so-1 {
   left: 194px;
-  top: 0px;
+  top: 65px;
   z-index: -1;
 }
 
@@ -648,6 +648,8 @@ li {
   width: 100%;
   height: 100%;
   display: none;
+  transition: opacity 1s;
+  opacity: 0;
 }
 
 .page2 .play-box .showInfo {
@@ -659,8 +661,6 @@ li {
   right: 0;
   margin: 0 auto;
   top: 260px;
-  opacity: 0;
-  transition: opacity 1s;
 }
 
 .page2 .play-box .replay {
@@ -680,8 +680,9 @@ li {
   left: 0;
   right: 0;
   margin: 0 auto;
-  top: 282px;
+  top: 657px;
   transition: opacity 1s;
+  width: 445px;
 }
 
 .page2 .play-box p {
