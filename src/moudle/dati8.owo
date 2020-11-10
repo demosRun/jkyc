@@ -1,45 +1,64 @@
 <template lang="pug">
-.dati-1.dati
-  img.so.so-1(src="@|429.png|")
-  img.so.so-2(src="@|1119.png|")
-  img.so.so-3(src="@|1118.png|")
-  img.so.so-4(src="@|477.png|")
+.dati-8.dati
   img.so.so-5(src="@|476.png|")
+  .so.so-0
+    img.so.so-1(src="@|daan8-355.png|")
+    img.so.so-2(src="@|daan8-1089.png|" o-animation="shrink" o-tap="showBox()")
+    img.so.so-3(src="@|daan8-1088.png|" o-animation="shrink" o-tap="showBox('.so-page2-9')")
+    img.so.so-4(src="@|daan8-655.png|")
 </template>
 
 <script>
   module.exports = {
     created: function () {
     },
+    showBox: function (text) {
+      if (text) {
+        document.querySelector('.right').style.display = 'block'
+        document.querySelector(text).style.display = 'block'
+      } else {
+        document.querySelector('.error').style.display = 'block'
+      }
+      setTimeout(() => {
+        document.querySelector('.right').style.display = 'none'
+        document.querySelector('.error').style.display = 'none'
+        this.$el.style.display = 'none'
+        document.querySelector('.so-page2-0').style.display = 'block'
+        if (owo.script.page2.data.jishu >= 9) {
+          owo.go('page3//scaleDown/scaleUpDown/true/scaleDown/scaleUp')
+        }
+      }, 1000);
+    }
   }
 </script>
 
 
 <style lang="less">
+.so-0 {
+  left: 124px;
+  top: 190px;
+  width: 496px;
+  height: 642px;
+  z-index: 0;;
+}
 .so-1 {
-  left: 278px;
-  top: 216px;
+  left: 194px;
+  top: 0px;
   z-index: -1;
 }
 .so-2 {
-  left: 361px;
-  top: 717px;
+  left: 237px;
+  top: 527px;
   z-index: -2;
 }
 .so-3 {
-  left: 124px;
-  top: 717px;
+  left: 0px;
+  top: 527px;
   z-index: -3;
 }
 .so-4 {
-  left: 138px;
-  top: 549px;
-  z-index: -4;
-}
-.so-5 {
-  left: 98px;
-  top: 413px;
-  z-index: -5;
+  left: 21px;
+  top: 307px;
 }
 
 </style>

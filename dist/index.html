@@ -1,158 +1,476 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <!-- 页面的元信息 -->
-    <title>{TAG_14226_TAG}</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
-    <meta name="format-detection" content="telephone=no, email=no"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
-    <meta name="renderer" content="webkit"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="filetype" content="1"/>
-    <meta name="publishedtype" content="1"/>
-    <meta name="pagetype" content="2"/>
-    <meta name="screen-orientation" content="landscape"/>
-    <meta name="x5-orientation" content="landscape"/>
-    <meta name="full-screen" content="yes"/>
-    <meta name="x5-fullscreen" content="true"/>
-    <meta name="browsermode" content="application"/>
-    <meta name="x5-page-mode" content="app"/>
-    
-      <!-- 页面主样式文件 -->
-      <link charset="utf-8"  rel="stylesheet" href="./static/css/owo.core.css">
-      
-    <!-- 附属css文件 -->
-    <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
-      
-  </head>
-  <body>
-    <div class="scale-box">
+
+<head>
+  <!-- 页面的元信息 -->
+  <title>{TAG_14226_TAG}</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no, email=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+  <meta name="renderer" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="filetype" content="1" />
+  <meta name="publishedtype" content="1" />
+  <meta name="pagetype" content="2" />
+  <meta name="screen-orientation" content="landscape" />
+  <meta name="x5-orientation" content="landscape" />
+  <meta name="full-screen" content="yes" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta name="browsermode" content="application" />
+  <meta name="x5-page-mode" content="app" />
+
+  <!-- 页面主样式文件 -->
+  <link charset="utf-8" rel="stylesheet" href="./static/css/owo.core.css">
+
+  <!-- 附属css文件 -->
+  <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
+
+</head>
+
+<body>
+  <div class="scale-box">
     <!-- 页面[loading]-->
-    <div class="loading-box page" template="loading" style="display: none;"><img class="loading" src="./static/resource/loading-logo.png"><div class="loading-bar"><div class="num-bar"></div></div><span class="text">Loading</span><div class="num">0%</div></div>
+    <div class="loading-box page" template="loading" style="display: none;">
+      <img class="loading" src="./static/resource/loading-logo.png">
+      <div class="loading-bar">
+        <div class="num-bar"></div>
+      </div>
+      <span class="text">Loading</span>
+      <div class="num">0%</div>
+    </div>
     <!-- 页面[page1]-->
-    <div class="page-1 page" template="page1" style="display: none;"><div class="so so-0"><img class="so so-1" src="./static/resource/1076.png"><img class="so so-2" src="./static/resource/167.png"><img class="so so-3" src="./static/resource/166.png"><img class="so so-4" src="./static/resource/1082.jpg"><div class="text-box"><img class="so so-2-1" src="./static/resource/1077.png"><img class="so so-2-2" src="./static/resource/1078.png" o-animation="flicker" o-tap="canGo"></div><div class="show-box"><img class="so so-3-1" src="./static/resource/1085.png" o-animation="shrink" go="page2//scaleDown/scaleUpDown/true/scaleDown/scaleUp"><img class="so so-3-2" src="./static/resource/1084.png"></div></div></div>
+    <div class="page-1 page" template="page1" style="display: none;">
+      <div class="so so-0">
+        <img class="so so-1" src="./static/resource/1076.png">
+        <img class="so so-2" src="./static/resource/167.png">
+        <img class="so so-3" src="./static/resource/166.png">
+        <img class="so so-4" src="./static/resource/1082.jpg">
+        <div class="text-box">
+          <img class="so so-2-1" src="./static/resource/1077.png">
+          <img class="so so-2-2" src="./static/resource/1078.png" o-animation="flicker" o-tap="canGo">
+        </div>
+        <div class="show-box">
+          <img class="so so-3-1" src="./static/resource/1085.png" o-animation="shrink" go="page2//scaleDown/scaleUpDown/true/scaleDown/scaleUp">
+          <img class="so so-3-2" src="./static/resource/1084.png">
+        </div>
+      </div>
+    </div>
     <!-- 页面[page2]-->
-    <div class="page2 page" template="page2" style="display: none;"><div class="so so-page2-0"><img class="so so-page2-1" src="./static/resource/1106.png" style="display:none;"><img class="so so-page2-2" src="./static/resource/1107.png" style="display:none;"><img class="so so-page2-3" src="./static/resource/1108.png" style="display:none;"><img class="so so-page2-4" src="./static/resource/1109.png" style="display:none;"><img class="so so-page2-5" src="./static/resource/1110.png" style="display:none;"><img class="so so-page2-6" src="./static/resource/1111.png" style="display:none;"><img class="so so-page2-7" src="./static/resource/1112.png" style="display:none;"><img class="so so-page2-8" src="./static/resource/344.png" style="display:none;"><img class="so so-page2-9" src="./static/resource/1113.png" style="display:none;"><img class="so so-page2-10" src="./static/resource/1105.png"><img class="so so-page2-11" src="./static/resource/1104.png"><img class="so so-page2-12" src="./static/resource/1103.png"><img class="so so-page2-13" src="./static/resource/1102.png"><img class="so so-page2-14" src="./static/resource/1101.png"><img class="so so-page2-15" src="./static/resource/1100.png"><img class="so so-page2-16" src="./static/resource/1099.png"><img class="so so-page2-17" src="./static/resource/1098.png"><img class="so so-page2-18" src="./static/resource/1097.png"><img class="so so-page2-19" src="./static/resource/1096.png" o-animation="shrink"><img class="so so-page2-20" src="./static/resource/1095.png" o-animation="shrink"><img class="so so-page2-21" src="./static/resource/1094.png" o-animation="shrink"><img class="so so-page2-22" src="./static/resource/1090.png" o-animation="shrink"><img class="so so-page2-23" src="./static/resource/1091.png" o-animation="shrink"><img class="so so-page2-24" src="./static/resource/1092.png" o-animation="shrink"><img class="so so-page2-25" src="./static/resource/1093.png" o-animation="shrink"><img class="so so-page2-26" src="./static/resource/375.png" o-animation="shrink" o-tap="showTiMu('.dati-2', '.so-page2-15')"><img class="so so-page2-27" src="./static/resource/1087.png" o-animation="shrink" o-tap="showTiMu('.dati-1', '.so-page2-18')"></div><img class="right" src="./static/resource/right.png"><img class="error" src="./static/resource/error.png"><div class="dati-1 dati" template="dati1"><img class="so so-1" src="./static/resource/429.png"><img class="so so-2" src="./static/resource/1119.png" o-animation="shrink" o-tap="showBox('.so-page2-9')"><img class="so so-3" src="./static/resource/1118.png" o-animation="shrink" o-tap="showBox()"><img class="so so-4" src="./static/resource/477.png"><img class="so so-5" src="./static/resource/476.png"></div><div class="dati-2 dati" template="dati2"><img class="so so-5" src="./static/resource/476.png"><div class="so so-0"><img class="so so-1" src="./static/resource/511.png"><img class="so so-2" src="./static/resource/1120.png" o-animation="shrink" o-tap="showBox()"><img class="so so-3" src="./static/resource/1121.png" o-animation="shrink" o-tap="showBox('.so-page2-8')"><img class="so so-4" src="./static/resource/503.png"></div></div></div></div>
-    
-<!-- 框架script文件 -->
-<script src="./static/js/owo.core.js" type="text/javascript" charset="UTF-8"></script>
-<script type="text/javascript" charset="UTF-8">
-owo.script = {
-  "loading": {
-    "data": {
-      "imgList": [""]
-    },
-    "show": function show() {
-      var mum = owo.query('.num')[0];
-      var numBar = owo.query('.num-bar')[0];
-      this.preloadImages(this.data.imgList, function (e) {
-        setTimeout(function () {
-          owo.go('page1////true//');
-        }, 500);
-      }, function (num) {
-        numBar.style.width = num + '%';
-        mum.innerHTML = num + '%';
-      });
-    },
-    "preloadImage": function preloadImage(src, successFn) {
-      var image = new Image();
-      image.src = src;
+    <div class="page2 page" template="page2" style="display: none;">
+      <div class="so so-page2-0">
+        <img class="so so-page2-1" src="./static/resource/1106.png" style="display:none;">
+        <img class="so so-page2-2" src="./static/resource/1107.png" style="display:none;">
+        <img class="so so-page2-3" src="./static/resource/1108.png" style="display:none;">
+        <img class="so so-page2-4" src="./static/resource/1109.png" style="display:none;">
+        <img class="so so-page2-5" src="./static/resource/1110.png" style="display:none;">
+        <img class="so so-page2-6" src="./static/resource/1111.png" style="display:none;">
+        <img class="so so-page2-7" src="./static/resource/1112.png" style="display:none;">
+        <img class="so so-page2-8" src="./static/resource/344.png" style="display:none;">
+        <img class="so so-page2-9" src="./static/resource/1113.png" style="display:none;">
+        <img class="so so-page2-10" src="./static/resource/1105.png">
+        <img class="so so-page2-11" src="./static/resource/1104.png">
+        <img class="so so-page2-12" src="./static/resource/1103.png">
+        <img class="so so-page2-13" src="./static/resource/1102.png">
+        <img class="so so-page2-14" src="./static/resource/1101.png">
+        <img class="so so-page2-15" src="./static/resource/1100.png">
+        <img class="so so-page2-16" src="./static/resource/1099.png">
+        <img class="so so-page2-17" src="./static/resource/1098.png">
+        <img class="so so-page2-18" src="./static/resource/1097.png">
+        <img class="so so-page2-19" src="./static/resource/1096.png" o-animation="shrink" o-tap="showTiMu('.dati-9', '.so-page2-10')">
+        <img class="so so-page2-20" src="./static/resource/1095.png" o-animation="shrink" o-tap="showTiMu('.dati-8', '.so-page2-13')">
+        <img class="so so-page2-21" src="./static/resource/1094.png" o-animation="shrink" o-tap="showTiMu('.dati-7', '.so-page2-16')">
+        <img class="so so-page2-22" src="./static/resource/1090.png" o-animation="shrink" o-tap="showTiMu('.dati-6', '.so-page2-11')">
+        <img class="so so-page2-23" src="./static/resource/1091.png" o-animation="shrink" o-tap="showTiMu('.dati-5', '.so-page2-14')">
+        <img class="so so-page2-24" src="./static/resource/1092.png" o-animation="shrink" o-tap="showTiMu('.dati-4', '.so-page2-17')">
+        <img class="so so-page2-25" src="./static/resource/1093.png" o-animation="shrink" o-tap="showTiMu('.dati-3', '.so-page2-12')">
+        <img class="so so-page2-26" src="./static/resource/375.png" o-animation="shrink" o-tap="showTiMu('.dati-2', '.so-page2-15')">
+        <img class="so so-page2-27" src="./static/resource/1087.png" o-animation="shrink" o-tap="showTiMu('.dati-1', '.so-page2-18')">
+      </div>
+      <img class="right" src="./static/resource/right.png">
+      <img class="error" src="./static/resource/error.png">
+      <div class="dati-1 dati" template="dati1">
+        <img class="so so-1" src="./static/resource/429.png">
+        <img class="so so-2" src="./static/resource/1119.png" o-animation="shrink" o-tap="showBox('.so-page2-9')">
+        <img class="so so-3" src="./static/resource/1118.png" o-animation="shrink" o-tap="showBox()">
+        <img class="so so-4" src="./static/resource/477.png">
+        <img class="so so-5" src="./static/resource/476.png">
+      </div>
+      <div class="dati-2 dati" template="dati2">
+        <img class="so so-5" src="./static/resource/476.png">
+        <div class="so so-0">
+          <img class="so so-1" src="./static/resource/511.png">
+          <img class="so so-2" src="./static/resource/1120.png" o-animation="shrink" o-tap="showBox()">
+          <img class="so so-3" src="./static/resource/1121.png" o-animation="shrink" o-tap="showBox('.so-page2-8')">
+          <img class="so so-4" src="./static/resource/503.png">
+        </div>
+      </div>
+      <div class="dati-3 dati" template="dati3">
+        <img class="so so-5" src="./static/resource/476.png">
+        <div class="so so-0">
+          <img class="so so-1" src="./static/resource/daan3-1076.png">
+          <img class="so so-2" src="./static/resource/daan3-1075.png" o-animation="shrink" o-tap="showBox()">
+          <img class="so so-3" src="./static/resource/daan3-1074.png" o-animation="shrink" o-tap="showBox('.so-page2-7')">
+          <img class="so so-4" src="./static/resource/daan3-529.png">
+        </div>
+      </div>
+      <div class="dati-4 dati" template="dati4">
+        <img class="so so-5" src="./static/resource/476.png">
+        <div class="so so-0">
+          <img class="so so-1" src="./static/resource/daan4-1077.png">
+          <img class="so so-2" src="./static/resource/daan4-1078.png" o-animation="shrink" o-tap="showBox()">
+          <img class="so so-3" src="./static/resource/daan4-1079.png" o-animation="shrink" o-tap="showBox('.so-page2-4')">
+          <img class="so so-4" src="./static/resource/daan4-555.png">
+        </div>
+      </div>
+      <div class="dati-5 dati" template="dati5">
+        <img class="so so-5" src="./static/resource/476.png">
+        <div class="so so-0">
+          <img class="so so-1" src="./static/resource/daan5-350.png">
+          <img class="so so-2" src="./static/resource/daan5-1082.png" o-animation="shrink" o-tap="showBox()">
+          <img class="so so-3" src="./static/resource/daan5-1081.png" o-animation="shrink" o-tap="showBox('.so-page2-2')">
+          <img class="so so-4" src="./static/resource/daan5-1083.png">
+        </div>
+      </div>
+      <div class="dati-6 dati" template="dati6">
+        <img class="so so-5" src="./static/resource/476.png">
+        <div class="so so-0">
+          <img class="so so-1" src="./static/resource/daan6-352.png">
+          <img class="so so-2" src="./static/resource/daan6-1084.png" o-animation="shrink" o-tap="showBox()">
+          <img class="so so-3" src="./static/resource/daan6-1085.png" o-animation="shrink" o-tap="showBox('.so-page2-3')">
+          <img class="so so-4" src="./static/resource/daan6-605.png">
+        </div>
+      </div>
+      <div class="dati-7 dati" template="dati7">
+        <img class="so so-5" src="./static/resource/476.png">
+        <div class="so so-0">
+          <img class="so so-1" src="./static/resource/daan7-353.png">
+          <img class="so so-2" src="./static/resource/daan7-1087.png" o-animation="shrink" o-tap="showBox()">
+          <img class="so so-3" src="./static/resource/daan7-1086.png" o-animation="shrink" o-tap="showBox('.so-page2-5')">
+          <img class="so so-4" src="./static/resource/daan7-630.png">
+        </div>
+      </div>
+      <div class="dati-8 dati" template="dati8">
+        <img class="so so-5" src="./static/resource/476.png">
+        <div class="so so-0">
+          <img class="so so-1" src="./static/resource/daan8-355.png">
+          <img class="so so-2" src="./static/resource/daan8-1089.png" o-animation="shrink" o-tap="showBox()">
+          <img class="so so-3" src="./static/resource/daan8-1088.png" o-animation="shrink" o-tap="showBox('.so-page2-9')">
+          <img class="so so-4" src="./static/resource/daan8-655.png">
+        </div>
+      </div>
+      <div class="dati-9 dati" template="dati9">
+        <img class="so so-5" src="./static/resource/476.png">
+        <div class="so so-0">
+          <img class="so so-1" src="./static/resource/daan9-1092.png">
+          <img class="so so-2" src="./static/resource/daan9-1091.png" o-animation="shrink" o-tap="showBox()">
+          <img class="so so-3" src="./static/resource/daan9-1090.png" o-animation="shrink" o-tap="showBox('.so-page2-6')">
+          <img class="so so-4" src="./static/resource/daan9-680.png">
+        </div>
+      </div>
+    </div>
+    <!-- 页面[page3]-->
+    <div class="page3 page" template="page3" style="display: none;">
+      <img class="share" src="./static/resource/share.png">
+    </div>
+  </div>
 
-      image.onload = function () {
-        successFn && successFn(src);
-      };
-
-      image.onerror = function (error) {
-        successFn && successFn(src);
-      };
-    },
-    "preloadImages": function preloadImages(srcs, doneFn, progressFn) {
-      var _this = this;
-
-      if (!Array.isArray(srcs)) {
-        console.log('第一个参数只能是一个数组');
-      } else {
-        var allCount = srcs.length;
-        var doneCount = 0;
-        srcs.forEach(function (srcItem) {
-          _this.preloadImage(srcItem, function () {
-            doneCount++;
-            progressFn && progressFn(Math.ceil(100 * doneCount / allCount));
-
-            if (doneCount === allCount) {
-              doneFn && doneFn();
-            }
+  <!-- 框架script文件 -->
+  <script src="./static/js/owo.core.js" type="text/javascript" charset="UTF-8"></script>
+  <script type="text/javascript" charset="UTF-8">
+    owo.script = {
+      "loading": {
+        "data": {
+          "imgList": [""]
+        },
+        "show": function show() {
+          var mum = owo.query('.num')[0];
+          var numBar = owo.query('.num-bar')[0];
+          this.preloadImages(this.data.imgList, function(e) {
+            setTimeout(function() {
+              owo.go('page1////true//');
+            }, 500);
+          }, function(num) {
+            numBar.style.width = num + '%';
+            mum.innerHTML = num + '%';
           });
-        });
-      }
-    }
-  },
-  "page1": {
-    "created": function created() {
-      owo.animate('fadeInLeft', this.query('.so-2'), 500);
-      owo.animate('fadeInRight', this.query('.so-3'), 1000);
-      owo.animate('flipInX', this.query('.so-2-1'), 1000);
-    },
-    "canGo": function canGo() {
-      this.$el.classList.add('can-go');
-    }
-  },
-  "page2": {
-    "showTiMu": function showTiMu(classStr, hideStr) {
-      this.query('.so-page2-0').style.display = 'none';
-      document.querySelector(classStr).style.display = 'block';
-      document.querySelector(hideStr).style.display = 'none';
-      this.$target.style.display = 'none';
-    },
-    "template": {
-      "dati1": {
-        "showBox": function showBox(text) {
-          var _this2 = this;
+        },
+        "preloadImage": function preloadImage(src, successFn) {
+          var image = new Image();
+          image.src = src;
 
-          if (text) {
-            document.querySelector('.right').style.display = 'block';
-            document.querySelector(text).style.display = 'block';
+          image.onload = function() {
+            successFn && successFn(src);
+          };
+
+          image.onerror = function(error) {
+            successFn && successFn(src);
+          };
+        },
+        "preloadImages": function preloadImages(srcs, doneFn, progressFn) {
+          var _this = this;
+
+          if (!Array.isArray(srcs)) {
+            console.log('第一个参数只能是一个数组');
           } else {
-            document.querySelector('.error').style.display = 'block';
-          }
+            var allCount = srcs.length;
+            var doneCount = 0;
+            srcs.forEach(function(srcItem) {
+              _this.preloadImage(srcItem, function() {
+                doneCount++;
+                progressFn && progressFn(Math.ceil(100 * doneCount / allCount));
 
-          setTimeout(function () {
-            document.querySelector('.right').style.display = 'none';
-            document.querySelector('.error').style.display = 'none';
-            _this2.$el.style.display = 'none';
-            document.querySelector('.so-page2-0').style.display = 'block';
-          }, 1000);
+                if (doneCount === allCount) {
+                  doneFn && doneFn();
+                }
+              });
+            });
+          }
         }
       },
-      "dati2": {
-        "showBox": function showBox(text) {
-          var _this3 = this;
-
-          if (text) {
-            document.querySelector('.right').style.display = 'block';
-            document.querySelector(text).style.display = 'block';
-          } else {
-            document.querySelector('.error').style.display = 'block';
-          }
-
-          setTimeout(function () {
-            document.querySelector('.right').style.display = 'none';
-            document.querySelector('.error').style.display = 'none';
-            _this3.$el.style.display = 'none';
-            document.querySelector('.so-page2-0').style.display = 'block';
-          }, 1000);
+      "page1": {
+        "created": function created() {
+          owo.animate('fadeInLeft', this.query('.so-2'), 500);
+          owo.animate('fadeInRight', this.query('.so-3'), 1000);
+          owo.animate('flipInX', this.query('.so-2-1'), 1000);
+        },
+        "canGo": function canGo() {
+          this.$el.classList.add('can-go');
         }
-      }
-    }
-  }
-};
-</script>
+      },
+      "page2": {
+        "data": {
+          "jishu": 0
+        },
+        "showTiMu": function showTiMu(classStr, hideStr) {
+          this.query('.so-page2-0').style.display = 'none';
+          document.querySelector(classStr).style.display = 'block';
+          document.querySelector(hideStr).style.display = 'none';
+          this.$target.style.display = 'none';
+          this.data.jishu++;
+        },
+        "show": function show() {
+          console.log(this.data.jishu);
+        },
+        "template": {
+          "dati1": {
+            "showBox": function showBox(text) {
+              var _this2 = this;
 
-    <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript"  charset="UTF-8"></script>
-    <script src="./static/js/main.js" type="text/javascript"  charset="UTF-8"></script>
-    <script src="https://cunchu.site/owo/plug/autoScale.js" type="text/javascript"  charset="UTF-8"></script>
+              if (text) {
+                document.querySelector('.right').style.display = 'block';
+                document.querySelector(text).style.display = 'block';
+              } else {
+                document.querySelector('.error').style.display = 'block';
+              }
 
-  </body>
+              setTimeout(function() {
+                document.querySelector('.right').style.display = 'none';
+                document.querySelector('.error').style.display = 'none';
+                _this2.$el.style.display = 'none';
+                document.querySelector('.so-page2-0').style.display = 'block';
+
+                if (owo.script.page2.data.jishu >= 9) {
+                  owo.go('page3//scaleDown/scaleUpDown/true/scaleDown/scaleUp');
+                }
+              }, 1000);
+            }
+          },
+          "dati2": {
+            "showBox": function showBox(text) {
+              var _this3 = this;
+
+              if (text) {
+                document.querySelector('.right').style.display = 'block';
+                document.querySelector(text).style.display = 'block';
+              } else {
+                document.querySelector('.error').style.display = 'block';
+              }
+
+              setTimeout(function() {
+                document.querySelector('.right').style.display = 'none';
+                document.querySelector('.error').style.display = 'none';
+                _this3.$el.style.display = 'none';
+                document.querySelector('.so-page2-0').style.display = 'block';
+
+                if (owo.script.page2.data.jishu >= 9) {
+                  owo.go('page3//scaleDown/scaleUpDown/true/scaleDown/scaleUp');
+                }
+              }, 1000);
+            }
+          },
+          "dati3": {
+            "showBox": function showBox(text) {
+              var _this4 = this;
+
+              if (text) {
+                document.querySelector('.right').style.display = 'block';
+                document.querySelector(text).style.display = 'block';
+              } else {
+                document.querySelector('.error').style.display = 'block';
+              }
+
+              setTimeout(function() {
+                document.querySelector('.right').style.display = 'none';
+                document.querySelector('.error').style.display = 'none';
+                _this4.$el.style.display = 'none';
+                document.querySelector('.so-page2-0').style.display = 'block';
+
+                if (owo.script.page2.data.jishu >= 9) {
+                  owo.go('page3//scaleDown/scaleUpDown/true/scaleDown/scaleUp');
+                }
+              }, 1000);
+            }
+          },
+          "dati4": {
+            "showBox": function showBox(text) {
+              var _this5 = this;
+
+              if (text) {
+                document.querySelector('.right').style.display = 'block';
+                document.querySelector(text).style.display = 'block';
+              } else {
+                document.querySelector('.error').style.display = 'block';
+              }
+
+              setTimeout(function() {
+                document.querySelector('.right').style.display = 'none';
+                document.querySelector('.error').style.display = 'none';
+                _this5.$el.style.display = 'none';
+                document.querySelector('.so-page2-0').style.display = 'block';
+
+                if (owo.script.page2.data.jishu >= 9) {
+                  owo.go('page3//scaleDown/scaleUpDown/true/scaleDown/scaleUp');
+                }
+              }, 1000);
+            }
+          },
+          "dati5": {
+            "showBox": function showBox(text) {
+              var _this6 = this;
+
+              if (text) {
+                document.querySelector('.right').style.display = 'block';
+                document.querySelector(text).style.display = 'block';
+              } else {
+                document.querySelector('.error').style.display = 'block';
+              }
+
+              setTimeout(function() {
+                document.querySelector('.right').style.display = 'none';
+                document.querySelector('.error').style.display = 'none';
+                _this6.$el.style.display = 'none';
+                document.querySelector('.so-page2-0').style.display = 'block';
+
+                if (owo.script.page2.data.jishu >= 9) {
+                  owo.go('page3//scaleDown/scaleUpDown/true/scaleDown/scaleUp');
+                }
+              }, 1000);
+            }
+          },
+          "dati6": {
+            "showBox": function showBox(text) {
+              var _this7 = this;
+
+              if (text) {
+                document.querySelector('.right').style.display = 'block';
+                document.querySelector(text).style.display = 'block';
+              } else {
+                document.querySelector('.error').style.display = 'block';
+              }
+
+              setTimeout(function() {
+                document.querySelector('.right').style.display = 'none';
+                document.querySelector('.error').style.display = 'none';
+                _this7.$el.style.display = 'none';
+                document.querySelector('.so-page2-0').style.display = 'block';
+
+                if (owo.script.page2.data.jishu >= 9) {
+                  owo.go('page3//scaleDown/scaleUpDown/true/scaleDown/scaleUp');
+                }
+              }, 1000);
+            }
+          },
+          "dati7": {
+            "showBox": function showBox(text) {
+              var _this8 = this;
+
+              if (text) {
+                document.querySelector('.right').style.display = 'block';
+                document.querySelector(text).style.display = 'block';
+              } else {
+                document.querySelector('.error').style.display = 'block';
+              }
+
+              setTimeout(function() {
+                document.querySelector('.right').style.display = 'none';
+                document.querySelector('.error').style.display = 'none';
+                _this8.$el.style.display = 'none';
+                document.querySelector('.so-page2-0').style.display = 'block';
+
+                if (owo.script.page2.data.jishu >= 9) {
+                  owo.go('page3//scaleDown/scaleUpDown/true/scaleDown/scaleUp');
+                }
+              }, 1000);
+            }
+          },
+          "dati8": {
+            "showBox": function showBox(text) {
+              var _this9 = this;
+
+              if (text) {
+                document.querySelector('.right').style.display = 'block';
+                document.querySelector(text).style.display = 'block';
+              } else {
+                document.querySelector('.error').style.display = 'block';
+              }
+
+              setTimeout(function() {
+                document.querySelector('.right').style.display = 'none';
+                document.querySelector('.error').style.display = 'none';
+                _this9.$el.style.display = 'none';
+                document.querySelector('.so-page2-0').style.display = 'block';
+
+                if (owo.script.page2.data.jishu >= 9) {
+                  owo.go('page3//scaleDown/scaleUpDown/true/scaleDown/scaleUp');
+                }
+              }, 1000);
+            }
+          },
+          "dati9": {
+            "showBox": function showBox(text) {
+              var _this10 = this;
+
+              if (text) {
+                document.querySelector('.right').style.display = 'block';
+                document.querySelector(text).style.display = 'block';
+              } else {
+                document.querySelector('.error').style.display = 'block';
+              }
+
+              setTimeout(function() {
+                document.querySelector('.right').style.display = 'none';
+                document.querySelector('.error').style.display = 'none';
+                _this10.$el.style.display = 'none';
+                document.querySelector('.so-page2-0').style.display = 'block';
+
+                if (owo.script.page2.data.jishu >= 9) {
+                  owo.go('page3//scaleDown/scaleUpDown/true/scaleDown/scaleUp');
+                }
+              }, 1000);
+            }
+          }
+        }
+      },
+      "page3": {}
+    };
+  </script>
+
+  <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="./static/js/main.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="https://cunchu.site/owo/plug/autoScale.js" type="text/javascript" charset="UTF-8"></script>
+
+</body>
+
 </html>

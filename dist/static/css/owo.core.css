@@ -265,6 +265,221 @@ li {
   top: 303px;
   z-index: -4;
 }
+.dati-3 .so-0 {
+  left: 124px;
+  top: 190px;
+  width: 496px;
+  height: 642px;
+  z-index: 0;
+}
+
+.dati-3 .so-1 {
+  left: 194px;
+  top: 0px;
+  z-index: -1;
+}
+
+.dati-3 .so-2 {
+  left: 237px;
+  top: 527px;
+  z-index: -2;
+}
+
+.dati-3 .so-3 {
+  left: 0px;
+  top: 527px;
+  z-index: -3;
+}
+
+.dati-3 .so-4 {
+  left: 50px;
+  top: 380px;
+  z-index: -4;
+}
+.dati-4 .so-0 {
+  left: 124px;
+  top: 190px;
+  width: 496px;
+  height: 642px;
+  z-index: 0;
+}
+
+.dati-4 .so-1 {
+  left: 194px;
+  top: 0px;
+  z-index: -1;
+}
+
+.dati-4 .so-2 {
+  left: 237px;
+  top: 527px;
+  z-index: -2;
+}
+
+.dati-4 .so-3 {
+  left: 0px;
+  top: 527px;
+  z-index: -3;
+}
+
+.dati-4 .so-4 {
+  left: 50px;
+  top: 380px;
+  z-index: -4;
+}
+.dati-5 .so-0 {
+  left: 124px;
+  top: 190px;
+  width: 496px;
+  height: 642px;
+  z-index: 0;
+}
+
+.dati-5 .so-1 {
+  left: 194px;
+  top: 0px;
+  z-index: -1;
+}
+
+.dati-5 .so-2 {
+  left: 237px;
+  top: 527px;
+  z-index: -2;
+}
+
+.dati-5 .so-3 {
+  left: 0px;
+  top: 527px;
+  z-index: -3;
+}
+
+.dati-5 .so-4 {
+  left: 50px;
+  top: 380px;
+  z-index: -4;
+}
+.dati-6 .so-0 {
+  left: 124px;
+  top: 190px;
+  width: 496px;
+  height: 642px;
+  z-index: 0;
+}
+
+.dati-6 .so-1 {
+  left: 194px;
+  top: 0px;
+  z-index: -1;
+}
+
+.dati-6 .so-2 {
+  left: 237px;
+  top: 527px;
+  z-index: -2;
+}
+
+.dati-6 .so-3 {
+  left: 0px;
+  top: 527px;
+  z-index: -3;
+}
+
+.dati-6 .so-4 {
+  left: 50px;
+  top: 380px;
+  z-index: -4;
+}
+.dati-7 .so-0 {
+  left: 124px;
+  top: 190px;
+  width: 496px;
+  height: 642px;
+  z-index: 0;
+}
+
+.dati-7 .so-1 {
+  left: 194px;
+  top: 0px;
+  z-index: -1;
+}
+
+.dati-7 .so-2 {
+  left: 237px;
+  top: 527px;
+  z-index: -2;
+}
+
+.dati-7 .so-3 {
+  left: 0px;
+  top: 527px;
+  z-index: -3;
+}
+
+.dati-7 .so-4 {
+  left: 50px;
+  top: 380px;
+  z-index: -4;
+}
+.dati-8 .so-0 {
+  left: 124px;
+  top: 190px;
+  width: 496px;
+  height: 642px;
+  z-index: 0;
+}
+
+.dati-8 .so-1 {
+  left: 194px;
+  top: 0px;
+  z-index: -1;
+}
+
+.dati-8 .so-2 {
+  left: 237px;
+  top: 527px;
+  z-index: -2;
+}
+
+.dati-8 .so-3 {
+  left: 0px;
+  top: 527px;
+  z-index: -3;
+}
+
+.dati-8 .so-4 {
+  left: 21px;
+  top: 307px;
+}
+.dati-9 .so-0 {
+  left: 124px;
+  top: 190px;
+  width: 496px;
+  height: 642px;
+  z-index: 0;
+}
+
+.dati-9 .so-1 {
+  left: 194px;
+  top: 0px;
+  z-index: -1;
+}
+
+.dati-9 .so-2 {
+  left: 237px;
+  top: 527px;
+  z-index: -2;
+}
+
+.dati-9 .so-3 {
+  left: 0px;
+  top: 527px;
+  z-index: -3;
+}
+
+.dati-9 .so-4 {
+  left: 21px;
+  top: 307px;
+}
 .page2 {
   background-image: url('../resource/1089.jpg');
 }
@@ -280,37 +495,31 @@ li {
 .page2 .so-page2-1 {
   left: 444px;
   top: 702px;
-  z-index: -1;
 }
 
 .page2 .so-page2-2 {
   left: 185px;
   top: 823px;
-  z-index: -2;
 }
 
 .page2 .so-page2-3 {
   left: 418px;
   top: 911px;
-  z-index: -3;
 }
 
 .page2 .so-page2-4 {
   left: 105px;
   top: 969px;
-  z-index: -4;
 }
 
 .page2 .so-page2-5 {
   left: 398px;
   top: 1099px;
-  z-index: -5;
 }
 
 .page2 .so-page2-6 {
   left: 242px;
   top: 1085px;
-  z-index: -6;
 }
 
 .page2 .so-page2-7 {
@@ -434,6 +643,11 @@ li {
   z-index: 999;
   display: none;
 }
+.page3 .share {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 /* 页面切换动画 */
 .o-page-scaleDown {
 	-webkit-animation: scaleDown .7s ease both;
@@ -464,6 +678,21 @@ li {
 }
 @keyframes scaleUpDown {
 	from { opacity: 0; transform: scale(1.2); }
+}
+.o-page-scaleUp {
+	-webkit-animation: scaleUp .7s ease both;
+	-moz-animation: scaleUp .7s ease both;
+	animation: scaleUp .7s ease both;
+}
+
+@-webkit-keyframes scaleUp {
+	from { opacity: 0; -webkit-transform: scale(.8); }
+}
+@-moz-keyframes scaleUp {
+	from { opacity: 0; -moz-transform: scale(.8); }
+}
+@keyframes scaleUp {
+	from { opacity: 0; transform: scale(.8); }
 }
 
 /* 动画效果 */

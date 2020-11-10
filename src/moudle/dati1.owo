@@ -23,6 +23,9 @@
         document.querySelector('.error').style.display = 'none'
         this.$el.style.display = 'none'
         document.querySelector('.so-page2-0').style.display = 'block'
+        if (owo.script.page2.data.jishu >= 9) {
+          owo.go('page3//scaleDown/scaleUpDown/true/scaleDown/scaleUp')
+        }
       }, 1000);
     }
   }

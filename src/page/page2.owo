@@ -19,27 +19,41 @@
     img.so.so-page2-16(src="@|1099.png|")
     img.so.so-page2-17(src="@|1098.png|")
     img.so.so-page2-18(src="@|1097.png|")
-    img.so.so-page2-19(src="@|1096.png|" o-animation="shrink")
-    img.so.so-page2-20(src="@|1095.png|" o-animation="shrink")
-    img.so.so-page2-21(src="@|1094.png|" o-animation="shrink")
-    img.so.so-page2-22(src="@|1090.png|" o-animation="shrink")
-    img.so.so-page2-23(src="@|1091.png|" o-animation="shrink")
-    img.so.so-page2-24(src="@|1092.png|" o-animation="shrink")
-    img.so.so-page2-25(src="@|1093.png|" o-animation="shrink")
+    img.so.so-page2-19(src="@|1096.png|" o-animation="shrink" o-tap="showTiMu('.dati-9', '.so-page2-10')")
+    img.so.so-page2-20(src="@|1095.png|" o-animation="shrink" o-tap="showTiMu('.dati-8', '.so-page2-13')")
+    img.so.so-page2-21(src="@|1094.png|" o-animation="shrink" o-tap="showTiMu('.dati-7', '.so-page2-16')")
+    img.so.so-page2-22(src="@|1090.png|" o-animation="shrink" o-tap="showTiMu('.dati-6', '.so-page2-11')")
+    img.so.so-page2-23(src="@|1091.png|" o-animation="shrink" o-tap="showTiMu('.dati-5', '.so-page2-14')")
+    img.so.so-page2-24(src="@|1092.png|" o-animation="shrink" o-tap="showTiMu('.dati-4', '.so-page2-17')")
+    img.so.so-page2-25(src="@|1093.png|" o-animation="shrink" o-tap="showTiMu('.dati-3', '.so-page2-12')")
     img.so.so-page2-26(src="@|375.png|" o-animation="shrink" o-tap="showTiMu('.dati-2', '.so-page2-15')")
     img.so.so-page2-27(src="@|1087.png|" o-animation="shrink" o-tap="showTiMu('.dati-1', '.so-page2-18')")
   img.right(src="@|right.png|")
   img.error(src="@|error.png|")
   plug(_name="dati1" _src="./src/moudle/dati1.owo")
   plug(_name="dati2" _src="./src/moudle/dati2.owo")
+  plug(_name="dati3" _src="./src/moudle/dati3.owo")
+  plug(_name="dati4" _src="./src/moudle/dati4.owo")
+  plug(_name="dati5" _src="./src/moudle/dati5.owo")
+  plug(_name="dati6" _src="./src/moudle/dati6.owo")
+  plug(_name="dati7" _src="./src/moudle/dati7.owo")
+  plug(_name="dati8" _src="./src/moudle/dati8.owo")
+  plug(_name="dati9" _src="./src/moudle/dati9.owo")
 </template>
 <script>
 module.exports = {
+  data: {
+    jishu: 0
+  },
   showTiMu: function (classStr, hideStr) {
     this.query('.so-page2-0').style.display = 'none'
     document.querySelector(classStr).style.display = 'block'
     document.querySelector(hideStr).style.display = 'none'
     this.$target.style.display = 'none'
+    this.data.jishu++
+  },
+  show: function () {
+    console.log(this.data.jishu)
   }
 }
 </script>
@@ -57,32 +71,26 @@ so-page2-0 {
 .so-page2-1 {
   left: 444px;
   top: 702px;
-  z-index: -1;
 }
 .so-page2-2 {
   left: 185px;
   top: 823px;
-  z-index: -2;
 }
 .so-page2-3 {
   left: 418px;
   top: 911px;
-  z-index: -3;
 }
 .so-page2-4 {
   left: 105px;
   top: 969px;
-  z-index: -4;
 }
 .so-page2-5 {
   left: 398px;
   top: 1099px;
-  z-index: -5;
 }
 .so-page2-6 {
   left: 242px;
   top: 1085px;
-  z-index: -6;
 }
 .so-page2-7 {
   left: 115px;
