@@ -26,7 +26,7 @@
 
   <!-- 附属css文件 -->
   <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
-  <script src="https://cunchu.site/owo/plug/autoScale.js" type="text/javascript" charset="UTF-8"></script>
+
 </head>
 
 <body>
@@ -92,8 +92,8 @@
       <img class="error" src="./static/resource/error.png">
       <div class="dati-1 dati" template="dati1">
         <img class="so so-1" src="./static/resource/429.png">
-        <img class="so so-2" src="./static/resource/1119.png" o-animation="shrink" o-tap="showBox('.so-page2-9')">
-        <img class="so so-3" src="./static/resource/1118.png" o-animation="shrink" o-tap="showBox()">
+        <img class="so so-2" src="./static/resource/1118.png" o-animation="shrink" o-tap="showBox()">
+        <img class="so so-3" src="./static/resource/1119.png" o-animation="shrink" o-tap="showBox('.so-page2-9')">
         <img class="so so-4" src="./static/resource/477.png">
         <img class="so so-5" src="./static/resource/476.png">
       </div>
@@ -101,8 +101,8 @@
         <img class="so so-5" src="./static/resource/476.png">
         <div class="so so-0">
           <img class="so so-1" src="./static/resource/511.png">
-          <img class="so so-2" src="./static/resource/1120.png" o-animation="shrink" o-tap="showBox()">
-          <img class="so so-3" src="./static/resource/1121.png" o-animation="shrink" o-tap="showBox('.so-page2-8')">
+          <img class="so so-3" src="./static/resource/1120.png" o-animation="shrink" o-tap="showBox()">
+          <img class="so so-2" src="./static/resource/1121.png" o-animation="shrink" o-tap="showBox('.so-page2-8')">
           <img class="so so-4" src="./static/resource/503.png">
         </div>
       </div>
@@ -119,8 +119,8 @@
         <img class="so so-5" src="./static/resource/476.png">
         <div class="so so-0">
           <img class="so so-1" src="./static/resource/daan4-1077.png">
-          <img class="so so-2" src="./static/resource/daan4-1078.png" o-animation="shrink" o-tap="showBox()">
-          <img class="so so-3" src="./static/resource/daan4-1079.png" o-animation="shrink" o-tap="showBox('.so-page2-4')">
+          <img class="so so-3" src="./static/resource/daan4-1078.png" o-animation="shrink" o-tap="showBox()">
+          <img class="so so-2" src="./static/resource/daan4-1079.png" o-animation="shrink" o-tap="showBox('.so-page2-4')">
           <img class="so so-4" src="./static/resource/daan4-555.png">
         </div>
       </div>
@@ -128,8 +128,8 @@
         <img class="so so-5" src="./static/resource/476.png">
         <div class="so so-0">
           <img class="so so-1" src="./static/resource/daan5-350.png">
-          <img class="so so-2" src="./static/resource/daan5-1082.png" o-animation="shrink" o-tap="showBox()">
-          <img class="so so-3" src="./static/resource/daan5-1081.png" o-animation="shrink" o-tap="showBox('.so-page2-2')">
+          <img class="so so-3" src="./static/resource/daan5-1082.png" o-animation="shrink" o-tap="showBox()">
+          <img class="so so-2" src="./static/resource/daan5-1081.png" o-animation="shrink" o-tap="showBox('.so-page2-2')">
           <img class="so so-4" src="./static/resource/daan5-1083.png">
         </div>
       </div>
@@ -168,6 +168,13 @@
           <img class="so so-3" src="./static/resource/daan9-1090.png" o-animation="shrink" o-tap="showBox('.so-page2-6')">
           <img class="so so-4" src="./static/resource/daan9-680.png">
         </div>
+      </div>
+      <div class="play-box">
+        <div class="showInfo"></div>
+        <p> </p>
+        <img class="name" src="./static/resource/d115ac74f94c4443de66a9c68099119.png">
+        <img class="replay" src="./static/resource/replay.png" o-animation="shrink" o-tap="window.location.replace('')">
+        <img class="share-button" src="./static/resource/share-button.png" o-animation="shrink" go="page3//scaleDown/scaleUpDown/true/scaleDown/scaleUp">
       </div>
     </div>
     <!-- 页面[page3]-->
@@ -241,7 +248,8 @@
       },
       "page2": {
         "data": {
-          "jishu": 0
+          "jishu": 0,
+          "duide": 0
         },
         "showTiMu": function showTiMu(classStr, hideStr) {
           this.query('.so-page2-0').style.display = 'none';
@@ -261,6 +269,7 @@
               if (text) {
                 document.querySelector('.right').style.display = 'block';
                 document.querySelector(text).style.display = 'block';
+                owo.script.page2.data.duide++;
               } else {
                 document.querySelector('.error').style.display = 'block';
               }
@@ -272,7 +281,14 @@
                 document.querySelector('.so-page2-0').style.display = 'block';
 
                 if (owo.script.page2.data.jishu >= 9) {
-                  owo.go('page3//scaleDown/scaleUpDown/true/scaleDown/scaleUp');
+                  document.querySelector('p').innerText = "\u6210\u529F\u6311\u9009" + owo.script.page2.data.duide + "\u76D8\u83DC\u5230\u4F60\u9910\u684C\uFF0C \u4F60\u4E0E\u4E16\u754C\u7684\u8DDD\u79BB\u53EA\u5DEE\u4E00\u4E2A\u8FDB\u535A\u4F1A\uFF01";
+                  document.querySelector('.play-box').style.display = 'block';
+                  setTimeout(function() {
+                    document.querySelector('.play-box .name').style.opacity = 0;
+                    setTimeout(function() {
+                      document.querySelector('.play-box .showInfo').style.opacity = 1;
+                    }, 500);
+                  }, 1000);
                 }
               }, 1000);
             }
@@ -284,6 +300,7 @@
               if (text) {
                 document.querySelector('.right').style.display = 'block';
                 document.querySelector(text).style.display = 'block';
+                owo.script.page2.data.duide++;
               } else {
                 document.querySelector('.error').style.display = 'block';
               }
@@ -295,7 +312,16 @@
                 document.querySelector('.so-page2-0').style.display = 'block';
 
                 if (owo.script.page2.data.jishu >= 9) {
-                  owo.go('page3//scaleDown/scaleUpDown/true/scaleDown/scaleUp');
+                  document.querySelector('p').innerText = "\u6210\u529F\u6311\u9009" + owo.script.page2.data.duide + "\u76D8\u83DC\u5230\u4F60\u9910\u684C\uFF0C \u4F60\u4E0E\u4E16\u754C\u7684\u8DDD\u79BB\u53EA\u5DEE\u4E00\u4E2A\u8FDB\u535A\u4F1A\uFF01";
+                  document.querySelector('.play-box').style.display = 'block';
+                  document.querySelector('p').innerText = "\u6210\u529F\u6311\u9009" + owo.script.page2.data.duide + "\u76D8\u83DC\u5230\u4F60\u9910\u684C\uFF0C \u4F60\u4E0E\u4E16\u754C\u7684\u8DDD\u79BB\u53EA\u5DEE\u4E00\u4E2A\u8FDB\u535A\u4F1A\uFF01";
+                  document.querySelector('.play-box').style.display = 'block';
+                  setTimeout(function() {
+                    document.querySelector('.play-box .name').style.opacity = 0;
+                    setTimeout(function() {
+                      document.querySelector('.play-box .showInfo').style.opacity = 1;
+                    }, 500);
+                  }, 1000);
                 }
               }, 1000);
             }
@@ -307,6 +333,7 @@
               if (text) {
                 document.querySelector('.right').style.display = 'block';
                 document.querySelector(text).style.display = 'block';
+                owo.script.page2.data.duide++;
               } else {
                 document.querySelector('.error').style.display = 'block';
               }
@@ -318,7 +345,14 @@
                 document.querySelector('.so-page2-0').style.display = 'block';
 
                 if (owo.script.page2.data.jishu >= 9) {
-                  owo.go('page3//scaleDown/scaleUpDown/true/scaleDown/scaleUp');
+                  document.querySelector('p').innerText = "\u6210\u529F\u6311\u9009" + owo.script.page2.data.duide + "\u76D8\u83DC\u5230\u4F60\u9910\u684C\uFF0C \u4F60\u4E0E\u4E16\u754C\u7684\u8DDD\u79BB\u53EA\u5DEE\u4E00\u4E2A\u8FDB\u535A\u4F1A\uFF01";
+                  document.querySelector('.play-box').style.display = 'block';
+                  setTimeout(function() {
+                    document.querySelector('.play-box .name').style.opacity = 0;
+                    setTimeout(function() {
+                      document.querySelector('.play-box .showInfo').style.opacity = 1;
+                    }, 500);
+                  }, 1000);
                 }
               }, 1000);
             }
@@ -330,6 +364,7 @@
               if (text) {
                 document.querySelector('.right').style.display = 'block';
                 document.querySelector(text).style.display = 'block';
+                owo.script.page2.data.duide++;
               } else {
                 document.querySelector('.error').style.display = 'block';
               }
@@ -341,7 +376,14 @@
                 document.querySelector('.so-page2-0').style.display = 'block';
 
                 if (owo.script.page2.data.jishu >= 9) {
-                  owo.go('page3//scaleDown/scaleUpDown/true/scaleDown/scaleUp');
+                  document.querySelector('p').innerText = "\u6210\u529F\u6311\u9009" + owo.script.page2.data.duide + "\u76D8\u83DC\u5230\u4F60\u9910\u684C\uFF0C \u4F60\u4E0E\u4E16\u754C\u7684\u8DDD\u79BB\u53EA\u5DEE\u4E00\u4E2A\u8FDB\u535A\u4F1A\uFF01";
+                  document.querySelector('.play-box').style.display = 'block';
+                  setTimeout(function() {
+                    document.querySelector('.play-box .name').style.opacity = 0;
+                    setTimeout(function() {
+                      document.querySelector('.play-box .showInfo').style.opacity = 1;
+                    }, 500);
+                  }, 1000);
                 }
               }, 1000);
             }
@@ -353,6 +395,7 @@
               if (text) {
                 document.querySelector('.right').style.display = 'block';
                 document.querySelector(text).style.display = 'block';
+                owo.script.page2.data.duide++;
               } else {
                 document.querySelector('.error').style.display = 'block';
               }
@@ -364,7 +407,14 @@
                 document.querySelector('.so-page2-0').style.display = 'block';
 
                 if (owo.script.page2.data.jishu >= 9) {
-                  owo.go('page3//scaleDown/scaleUpDown/true/scaleDown/scaleUp');
+                  document.querySelector('p').innerText = "\u6210\u529F\u6311\u9009" + owo.script.page2.data.duide + "\u76D8\u83DC\u5230\u4F60\u9910\u684C\uFF0C \u4F60\u4E0E\u4E16\u754C\u7684\u8DDD\u79BB\u53EA\u5DEE\u4E00\u4E2A\u8FDB\u535A\u4F1A\uFF01";
+                  document.querySelector('.play-box').style.display = 'block';
+                  setTimeout(function() {
+                    document.querySelector('.play-box .name').style.opacity = 0;
+                    setTimeout(function() {
+                      document.querySelector('.play-box .showInfo').style.opacity = 1;
+                    }, 500);
+                  }, 100);
                 }
               }, 1000);
             }
@@ -376,6 +426,7 @@
               if (text) {
                 document.querySelector('.right').style.display = 'block';
                 document.querySelector(text).style.display = 'block';
+                owo.script.page2.data.duide++;
               } else {
                 document.querySelector('.error').style.display = 'block';
               }
@@ -387,7 +438,14 @@
                 document.querySelector('.so-page2-0').style.display = 'block';
 
                 if (owo.script.page2.data.jishu >= 9) {
-                  owo.go('page3//scaleDown/scaleUpDown/true/scaleDown/scaleUp');
+                  document.querySelector('p').innerText = "\u6210\u529F\u6311\u9009" + owo.script.page2.data.duide + "\u76D8\u83DC\u5230\u4F60\u9910\u684C\uFF0C \u4F60\u4E0E\u4E16\u754C\u7684\u8DDD\u79BB\u53EA\u5DEE\u4E00\u4E2A\u8FDB\u535A\u4F1A\uFF01";
+                  document.querySelector('.play-box').style.display = 'block';
+                  setTimeout(function() {
+                    document.querySelector('.play-box .name').style.opacity = 0;
+                    setTimeout(function() {
+                      document.querySelector('.play-box .showInfo').style.opacity = 1;
+                    }, 500);
+                  }, 1000);
                 }
               }, 1000);
             }
@@ -399,6 +457,7 @@
               if (text) {
                 document.querySelector('.right').style.display = 'block';
                 document.querySelector(text).style.display = 'block';
+                owo.script.page2.data.duide++;
               } else {
                 document.querySelector('.error').style.display = 'block';
               }
@@ -410,7 +469,14 @@
                 document.querySelector('.so-page2-0').style.display = 'block';
 
                 if (owo.script.page2.data.jishu >= 9) {
-                  owo.go('page3//scaleDown/scaleUpDown/true/scaleDown/scaleUp');
+                  document.querySelector('p').innerText = "\u6210\u529F\u6311\u9009" + owo.script.page2.data.duide + "\u76D8\u83DC\u5230\u4F60\u9910\u684C\uFF0C \u4F60\u4E0E\u4E16\u754C\u7684\u8DDD\u79BB\u53EA\u5DEE\u4E00\u4E2A\u8FDB\u535A\u4F1A\uFF01";
+                  document.querySelector('.play-box').style.display = 'block';
+                  setTimeout(function() {
+                    document.querySelector('.play-box .name').style.opacity = 0;
+                    setTimeout(function() {
+                      document.querySelector('.play-box .showInfo').style.opacity = 1;
+                    }, 500);
+                  }, 1000);
                 }
               }, 1000);
             }
@@ -422,6 +488,7 @@
               if (text) {
                 document.querySelector('.right').style.display = 'block';
                 document.querySelector(text).style.display = 'block';
+                owo.script.page2.data.duide++;
               } else {
                 document.querySelector('.error').style.display = 'block';
               }
@@ -433,7 +500,14 @@
                 document.querySelector('.so-page2-0').style.display = 'block';
 
                 if (owo.script.page2.data.jishu >= 9) {
-                  owo.go('page3//scaleDown/scaleUpDown/true/scaleDown/scaleUp');
+                  document.querySelector('p').innerText = "\u6210\u529F\u6311\u9009" + owo.script.page2.data.duide + "\u76D8\u83DC\u5230\u4F60\u9910\u684C\uFF0C \u4F60\u4E0E\u4E16\u754C\u7684\u8DDD\u79BB\u53EA\u5DEE\u4E00\u4E2A\u8FDB\u535A\u4F1A\uFF01";
+                  document.querySelector('.play-box').style.display = 'block';
+                  setTimeout(function() {
+                    document.querySelector('.play-box .name').style.opacity = 0;
+                    setTimeout(function() {
+                      document.querySelector('.play-box .showInfo').style.opacity = 1;
+                    }, 500);
+                  }, 1000);
                 }
               }, 1000);
             }
@@ -445,6 +519,7 @@
               if (text) {
                 document.querySelector('.right').style.display = 'block';
                 document.querySelector(text).style.display = 'block';
+                owo.script.page2.data.duide++;
               } else {
                 document.querySelector('.error').style.display = 'block';
               }
@@ -456,7 +531,14 @@
                 document.querySelector('.so-page2-0').style.display = 'block';
 
                 if (owo.script.page2.data.jishu >= 9) {
-                  owo.go('page3//scaleDown/scaleUpDown/true/scaleDown/scaleUp');
+                  document.querySelector('p').innerText = "\u6210\u529F\u6311\u9009" + owo.script.page2.data.duide + "\u76D8\u83DC\u5230\u4F60\u9910\u684C\uFF0C \u4F60\u4E0E\u4E16\u754C\u7684\u8DDD\u79BB\u53EA\u5DEE\u4E00\u4E2A\u8FDB\u535A\u4F1A\uFF01";
+                  document.querySelector('.play-box').style.display = 'block';
+                  setTimeout(function() {
+                    document.querySelector('.play-box .name').style.opacity = 0;
+                    setTimeout(function() {
+                      document.querySelector('.play-box .showInfo').style.opacity = 1;
+                    }, 500);
+                  }, 1000);
                 }
               }, 1000);
             }
@@ -467,9 +549,9 @@
     };
   </script>
 
+  <script src="https://cunchu.site/owo/plug/autoScale.js" type="text/javascript" charset="UTF-8"></script>
   <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript" charset="UTF-8"></script>
   <script src="./static/js/main.js" type="text/javascript" charset="UTF-8"></script>
-  
 
 </body>
 

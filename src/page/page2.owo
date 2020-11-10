@@ -39,11 +39,18 @@
   plug(_name="dati7" _src="./src/moudle/dati7.owo")
   plug(_name="dati8" _src="./src/moudle/dati8.owo")
   plug(_name="dati9" _src="./src/moudle/dati9.owo")
+  .play-box
+    .showInfo
+    p 
+    img.name(src="@|d115ac74f94c4443de66a9c68099119.png|")
+    img.replay(src="@|replay.png|" o-animation="shrink" o-tap="window.location.replace('')")
+    img.share-button(src="@|share-button.png|" o-animation="shrink" go="page3//scaleDown/scaleUpDown/true/scaleDown/scaleUp")
 </template>
 <script>
 module.exports = {
   data: {
-    jishu: 0
+    jishu: 0,
+    duide: 0
   },
   showTiMu: function (classStr, hideStr) {
     this.query('.so-page2-0').style.display = 'none'
@@ -189,5 +196,50 @@ so-page2-0 {
   margin: auto;
   z-index: 999;
   display: none;
+}
+.play-box {
+  width: 100%;
+  height: 100%;
+  display: none;
+  .showInfo {
+    width: 713px;
+    height: 340px;
+    background-image: url('@|gongxi.png|');
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 260px;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  .replay {
+    position: absolute;
+    left: 60px;
+    bottom: 350px;
+  }
+  .share-button {
+    position: absolute;
+    right: 60px;
+    bottom: 350px;
+  }
+  .name {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 282px;
+    transition: opacity 1s;
+  }
+  p {
+    position: absolute;
+    color: #9c7d5e;
+    font-size: 40px;
+    left: 83px;
+    top: 397px;
+    width: 582px;
+    line-height: 62px;
+    font-weight: bold;
+  }
 }
 </style>

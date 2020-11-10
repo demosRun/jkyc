@@ -1,8 +1,8 @@
 <template lang="pug">
 .dati-1.dati
   img.so.so-1(src="@|429.png|")
-  img.so.so-2(src="@|1119.png|" o-animation="shrink" o-tap="showBox()")
-  img.so.so-3(src="@|1118.png|" o-animation="shrink"  o-tap="showBox('.so-page2-9')")
+  img.so.so-2(src="@|1118.png|" o-animation="shrink" o-tap="showBox()")
+  img.so.so-3(src="@|1119.png|" o-animation="shrink"  o-tap="showBox('.so-page2-9')")
   img.so.so-4(src="@|477.png|")
   img.so.so-5(src="@|476.png|")
 </template>
@@ -15,6 +15,7 @@
       if (text) {
         document.querySelector('.right').style.display = 'block'
         document.querySelector(text).style.display = 'block'
+        owo.script.page2.data.duide++
       } else {
         document.querySelector('.error').style.display = 'block'
       }
@@ -24,7 +25,14 @@
         this.$el.style.display = 'none'
         document.querySelector('.so-page2-0').style.display = 'block'
         if (owo.script.page2.data.jishu >= 9) {
-          owo.go('page3//scaleDown/scaleUpDown/true/scaleDown/scaleUp')
+          document.querySelector('p').innerText = `成功挑选${owo.script.page2.data.duide}盘菜到你餐桌， 你与世界的距离只差一个进博会！`
+          document.querySelector('.play-box').style.display = 'block'
+          setTimeout(() => {
+            document.querySelector('.play-box .name').style.opacity = 0
+            setTimeout(() => {
+              document.querySelector('.play-box .showInfo').style.opacity = 1
+            }, 500);
+          }, 1000);
         }
       }, 1000);
     }
@@ -39,7 +47,7 @@
   z-index: -1;
 }
 .so-2 {
-  left: 361px;
+  left: 422px;
   top: 717px;
   z-index: -2;
 }
