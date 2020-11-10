@@ -3,8 +3,8 @@
   img.so.so-5(src="@|476.png|")
   .so.so-0
     img.so.so-1(src="@|511.png|")
-    img.so.so-2(src="@|1120.png|" o-animation="shrink" o-tap="showBox()")
-    img.so.so-3(src="@|1121.png|" o-animation="shrink" o-tap="showBox('.so-page2-8')")
+    img.so.so-2(src="@|1120.png|" o-animation="shrink" o-tap="showBox('.so-page2-8')")
+    img.so.so-3(src="@|1121.png|" o-animation="shrink" o-tap="showBox()")
     img.so.so-4(src="@|503.png|")
 </template>
 

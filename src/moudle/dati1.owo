@@ -1,8 +1,8 @@
 <template lang="pug">
 .dati-1.dati
   img.so.so-1(src="@|429.png|")
-  img.so.so-2(src="@|1119.png|" o-animation="shrink" o-tap="showBox('.so-page2-9')")
-  img.so.so-3(src="@|1118.png|" o-animation="shrink"  o-tap="showBox()")
+  img.so.so-2(src="@|1119.png|" o-animation="shrink" o-tap="showBox()")
+  img.so.so-3(src="@|1118.png|" o-animation="shrink"  o-tap="showBox('.so-page2-9')")
   img.so.so-4(src="@|477.png|")
   img.so.so-5(src="@|476.png|")
 </template>
