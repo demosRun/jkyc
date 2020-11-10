@@ -19,7 +19,7 @@
     created: function () {
       owo.animate('fadeInLeft', this.query('.so-2'), 500)
       owo.animate('fadeInRight', this.query('.so-3'), 1000)
-      owo.animate('flipInX', this.query('.so-2-1'), 1000)
+      owo.animate('zoomIn', this.query('.so-2-1'), 1000)
     },
     canGo: function () {
       this.$el.classList.add('can-go')
