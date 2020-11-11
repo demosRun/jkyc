@@ -5,6 +5,9 @@
     img.so.so-2(src="@|167.png|")
     img.so.so-3(src="@|166.png|")
     img.so.so-4(src="@|1082.jpg|")
+    //- logo
+    img.logo-1.so(src="@|logo-1.png|")
+    img.logo-2.so(src="@|logo-2.png|")
     //- 按钮和文字
     .text-box
       img.so.so-2-1(src="@|1077.png|")
@@ -81,5 +84,14 @@
 }
 .show-box {
   display: none;
+}
+.logo-1 {
+  width: 250px;
+  right: 3px;
+  top: 200px;
+}
+.logo-2 {
+  right: 64px;
+  top: 316px;
 }
 </style>
