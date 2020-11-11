@@ -10,7 +10,7 @@
     img.logo-2.so(src="@|logo-2.png|")
     //- 按钮和文字
     .text-box
-      img.so.so-2-1(src="@|1077.png|")
+      img.so.so-2-1(src="@|341d177cf2aa3019934169f30228951.png|")
       img.so.so-2-2(src="@|1078.png|" o-animation="flicker" o-tap="canGo")
     .show-box
       img.so.so-3-1(src="@|1085.png|" o-animation="shrink" go="page2//scaleDown/scaleUpDown/true/scaleDown/scaleUp")
@@ -63,7 +63,7 @@
   z-index: -4;
 }
 .so-2-1 {
-  left: 74px;
+  left: 147px;
   top: 243px;
   z-index: -1;
 }

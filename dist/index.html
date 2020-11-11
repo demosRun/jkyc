@@ -50,7 +50,7 @@
         <img class="logo-1 so" src="./static/resource/logo-1.png">
         <img class="logo-2 so" src="./static/resource/logo-2.png">
         <div class="text-box">
-          <img class="so so-2-1" src="./static/resource/1077.png">
+          <img class="so so-2-1" src="./static/resource/341d177cf2aa3019934169f30228951.png">
           <img class="so so-2-2" src="./static/resource/1078.png" o-animation="flicker" o-tap="canGo">
         </div>
         <div class="show-box">
@@ -94,8 +94,8 @@
       <img class="error" src="./static/resource/error.png">
       <div class="dati-1 dati" template="dati1">
         <img class="so so-1" src="./static/resource/429.png">
-        <img class="so so-2" src="./static/resource/1118.png" o-animation="shrink" o-tap="showBox()">
-        <img class="so so-3" src="./static/resource/1119.png" o-animation="shrink" o-tap="showBox('.so-page2-9')">
+        <img class="so so-2" src="./static/resource/1118.png" o-animation="shrink" o-tap="showBox('.so-page2-9')">
+        <img class="so so-3" src="./static/resource/1119.png" o-animation="shrink" o-tap="showBox()">
         <img class="so so-4" src="./static/resource/477.png">
         <img class="so so-5" src="./static/resource/476.png">
       </div>
@@ -184,10 +184,19 @@
       <img class="share" src="./static/resource/share.png">
     </div>
   </div>
+  <!-- 插件[music]-->
+  <div class="music-menu owo-block" template="music" style="display: none;">
+    <img class="music-icon" src="https://cunchu.site/ozzx/resource/music.png" o-tap="switchPlay">
+  </div>
 
   <!-- 框架script文件 -->
   <script src="./static/js/owo.core.js" type="text/javascript" charset="UTF-8"></script>
   <script type="text/javascript" charset="UTF-8">
+    // 模块 music 的script代码
+    // 微信自动播放音乐
+    document.addEventListener("WeixinJSBridgeReady", function() {
+      owo.script.music.play();
+    }, false);
     owo.script = {
       "loading": {
         "data": {
@@ -545,7 +554,39 @@
           }
         }
       },
-      "page3": {}
+      "page3": {},
+      "music": {
+        "data": {
+          "music": null,
+          "musicIsPlay": false
+        },
+        "switchPlay": function switchPlay() {
+          this.data.musicIsPlay ? this.pause() : this.play();
+        },
+        "play": function play() {
+          console.log('播放音乐');
+
+          if (!this.data.musicIsPlay) {
+            this.data.musicIsPlay = true;
+            this.data.music = new Audio("http://cunchu.site/people/music/%E9%80%90%E6%B8%90%E4%B8%8A%E5%8D%87%20-%20Inspiring_mini.mp3");
+            this.data.music.volume = 0.2;
+            this.data.music.loop = true;
+            this.data.music.play();
+            var icon = document.getElementsByClassName('music-icon')[0];
+            icon.src = 'https://cunchu.site/ozzx/resource/music.png';
+            icon.classList.add('active');
+          }
+        },
+        "pause": function pause() {
+          if (this.data.musicIsPlay) {
+            this.data.musicIsPlay = false;
+            this.data.music.pause();
+            var icon = document.getElementsByClassName('music-icon')[0];
+            icon.src = 'https://cunchu.site/ozzx/resource/music.png';
+            icon.classList.remove('active');
+          }
+        }
+      }
     };
   </script>
 
